@@ -1,4 +1,6 @@
 import numpy as np
+import libprova.kmeans
+import libprova.VIP
 
 def sig(x):
     """

@@ -13,3 +13,5 @@ Basta baixar/clonar o repositório e usar qualquer script em python chamando o m
 - Função ReLu
 - Função sigmoide
 - Saída de neurônio de perceptron
+- Módulo para resolução de problemas de VIP de 2 estados
+- Módulo para resolução de problemas de K-means (cálculo de centroide, iterações...)
