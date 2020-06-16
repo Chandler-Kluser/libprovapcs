@@ -16,3 +16,4 @@ Basta baixar/clonar o repositório e usar qualquer script em python chamando o m
 - Módulo para resolução de problemas de VIP de 2 estados
 - Módulo para resolução de problemas de K-means (cálculo de centroide, iterações...)
 - Módulo para resolução de cálculos de entropia para problemas de árvores de decisão
+- Módulo de regressão linear simples e cálculo de RSS
