@@ -16,6 +16,14 @@ print(lb.kmeans.calc_distance(a,b))
 
 # cálculo de entropia
 
-samples = np.array([7,2,4])
+print(lb.dectrees.entropy(2,3))
 
-print(lb.overall_entropy(samples))
+# cálculo de soma de linha de entropia
+
+print(lb.dectrees.parameter_entropy_sum(np.array([2,3,4])))
+
+# cálculo de entropia geral para um parâmetro
+
+list = [[3,0,0],[3,2,0],[1,0,4]]
+
+print(lb.dectrees.overall_entropy(list))
