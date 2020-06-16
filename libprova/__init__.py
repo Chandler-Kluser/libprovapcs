@@ -3,6 +3,7 @@ import libprova.kmeans
 import libprova.VIP
 import libprova.dectrees
 import libprova.linearregression
+import libprova.confusionmatrix
 
 def sig(x):
     """
