@@ -2,6 +2,7 @@ import numpy as np
 import libprova.kmeans
 import libprova.VIP
 import libprova.dectrees
+import libprova.linearregression
 
 def sig(x):
     """

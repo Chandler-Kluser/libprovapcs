@@ -49,3 +49,14 @@ r = lb.VIP.move(r,0,gamma,4)
 r = lb.VIP.move(r,10,gamma,5)
 
 print(r)
+
+# exemplo de regressão linear e cálculo de RSS
+
+x = [43,21,25,42,57,59]
+y = [99,65,79,75,87,81]
+
+reg = lb.linearregression.linreg(x,y)
+
+yhat = lb.linearregression.estimate(y,reg)
+
+lb.linearregression.RSS(y,yhat)
