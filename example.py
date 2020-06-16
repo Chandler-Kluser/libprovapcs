@@ -37,3 +37,15 @@ print(entropy_Si)
 gain = lb.dectrees.gain(entropy_S,entropy_Si)
 
 print(gain)
+
+# exemplo de movimento de robô em grid
+
+gamma = 0.8
+
+r = lb.VIP.move(0,0,gamma,1)
+r = lb.VIP.move(r,10,gamma,2)
+r = lb.VIP.move(r,0,gamma,3)
+r = lb.VIP.move(r,0,gamma,4)
+r = lb.VIP.move(r,10,gamma,5)
+
+print(r)

@@ -5,6 +5,7 @@ def v(last_v,r,ac1,ac2,gamma):
     a1 = r[0] + gamma*max(ac1[0]*last_v[0]+ac1[1]*last_v[1],ac1[2]*last_v[0]+ac1[3]*last_v[1])
     a2 = r[1] + gamma*max(ac2[0]*last_v[0]+ac2[1]*last_v[1],ac2[2]*last_v[0]+ac2[3]*last_v[1])
     return [a1,a2]
+
 def iter(tol,initial_v,act1,act2):
     """
     Iterates until a tolerance from a VIP problem
@@ -19,3 +20,14 @@ def iter(tol,initial_v,act1,act2):
         diff = abs(final_v[0]-old_v[0])+abs(final_v[1]-old_v[1])
         old_v=final_v
         i += 1
+
+def move(old_r,r_value,gamma,power):
+    """
+    Gives the new reward value after a movement.
+
+    old_r: old reward value
+    r_value: the value given for the movement behavior
+    gamma: come on, you know what It is...
+    power: power of gamma
+    """
+    return old_r + gamma**power*r_value

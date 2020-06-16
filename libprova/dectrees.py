@@ -32,7 +32,6 @@ def overall_parameter_entropy_sum(s_list):
     w1 = []
     for i in s_list:
         i = np.array(i)
-
         w1.append(parameter_entropy_sum(i))
         w2.append(np.sum(i))
     w1 = np.array(w1)
