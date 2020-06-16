@@ -23,7 +23,7 @@ def parameter_entropy_sum(si_s):
         sum += entropy(si_s[i],s)
     return sum
 
-def overall_entropy(s_list):
+def overall_parameter_entropy_sum(s_list):
     """
     Calculates the overall entropy
     s_list: list of outputs lists of observations counts of all parameters
@@ -39,3 +39,7 @@ def overall_entropy(s_list):
     w2 = np.array(w2)
     w2 = w2/np.sum(w2)
     return np.dot(w1,w2)
+
+def gain(entropy_S,entropy_Si):
+    """ Returns the Information Gain between the global entropy and a parameter entropy """
+    return entropy_S-entropy_Si

@@ -20,10 +20,20 @@ print(lb.dectrees.entropy(2,3))
 
 # cálculo de soma de linha de entropia
 
-print(lb.dectrees.parameter_entropy_sum(np.array([2,3,4])))
+entropy_S = lb.dectrees.parameter_entropy_sum(np.array([7,4,2]))
+
+print(entropy_S)
 
 # cálculo de entropia geral para um parâmetro
 
 list = [[3,0,0],[3,2,0],[1,0,4]]
 
-print(lb.dectrees.overall_entropy(list))
+entropy_Si = lb.dectrees.overall_parameter_entropy_sum(list)
+
+print(entropy_Si)
+
+# cálculo do ganho de informação
+
+gain = lb.dectrees.gain(entropy_S,entropy_Si)
+
+print(gain)
