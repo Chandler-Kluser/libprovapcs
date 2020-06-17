@@ -1,6 +1,7 @@
 def linreg(x,y):
     """
     Returns a and b coefficients from a single linear regression
+
     x: list of x values
     y: list of y values
     """
@@ -28,6 +29,7 @@ def linreg(x,y):
 def estimate(x,reg):
     """
     Gives a linear regression estimation from an x value
+
     x: float or list
     reg: list of a and b values, in this order
     """
@@ -43,6 +45,7 @@ def estimate(x,reg):
 def RSS(y,yhat):
     """
     Calculates RSS value given y and yhat
+    
     y and yhat: lists
     """
     n = len(y)

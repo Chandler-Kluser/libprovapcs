@@ -60,3 +60,28 @@ reg = lb.linearregression.linreg(x,y)
 yhat = lb.linearregression.estimate(y,reg)
 
 lb.linearregression.RSS(y,yhat)
+
+# métricas
+
+TP = 150
+TN = 100
+FP = 10
+FN = 5
+
+lb.confusionmatrix.showmetrics(TP,TN,FP,FN)
+
+# comandos de avaliação estatística
+
+a = lb.prob_2_z(0.79)
+
+print(a)
+
+a = [0.1,0.12,0.11]
+b = [0.15,0.10,0.13]
+
+a = lb.get_accuracy(a)
+b = lb.get_accuracy(b)
+
+## rejeição de hipótese
+
+lb.wald_test(a,b)
